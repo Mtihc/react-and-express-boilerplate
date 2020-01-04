@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  web:
+    container_name: app_web
+    build:
+      context: ./web
+      dockerfile: Dockerfile
+    image: mitchstoffels/web
+    ports:
+      - "80:80"
